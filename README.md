@@ -1,4 +1,4 @@
-# Predictive Modeling of Aerial Warfare: Deep Learning Forecasts of Missile & UAV Strikes
+# Ukraine Missile & UAV Strikes Analysis: Deep Learning Forecasting (LSTM & CNN)
 
 ## Executive Summary
 This project delivers a comprehensive analytical framework and predictive engine for tracking Russian missile and Unmanned Aerial Vehicle (UAV) strikes on Ukrainian infrastructure (October 2022 – Present). Moving beyond simple statistical counting, this initiative applies advanced **Deep Learning (LSTM & CNN)** to forecast future attack volumes based on historical time-series data.
@@ -8,7 +8,7 @@ By leveraging a dataset of verified military reports, I developed a pipeline tha
 ## Data Source & Attribution
 The core dataset is manually curated from official reports by the **Air Force Command of UA Armed Forces** and the **General Staff of the Armed Forces of Ukraine**.
 * **Primary Source:** Verified reports via official Facebook/Telegram channels.
-* **Dataset Used:** `missile_attacks_daily.csv` (Time-series launch data).
+* **Dataset:** `missile_attacks_daily.csv` (Time-series launch data).
 * **Key Features:** `launch_place`, `model` (Missile/UAV type), `launched` vs `destroyed` counts, and `target` coordinates.
 * **Geospatial Scope:** Covers all major administrative regions (oblasts) of Ukraine.
 
@@ -19,7 +19,7 @@ The core dataset is manually curated from official reports by the **Air Force Co
 * **Visualization:** **Matplotlib** & **Seaborn** (Geospatial scatter plots, loss curves).
 * **Infrastructure:** GPU-accelerated training environment for sequential tensor operations.
 
-## Exploratory Data Analysis (EDA)
+## Visual Analysis & Strategic Insights
 
 ### Geospatial Attack Vectors
 To understand the strategic "encirclement" of air defenses, I mapped the origin points of all recorded strikes.
@@ -102,7 +102,7 @@ This project demonstrates that aerial warfare, while seemingly chaotic, follows 
 2.  **Real-Time Pipeline:** Automate data scraping from Telegram sources to transform this from a static analysis into a live early-warning system.
 
 ## References
-* BBC News: *Russian attacks on Ukraine double since Trump inauguration*
-* CSIS: *Calculating the cost-effectiveness of Russia’s drone strikes*
-* War Quants: *Sustained Russian Shahed swarms: The war of precision mass continues*
-* Pavlo Krasnomovets: *Missile Attacks Calendar*
+* **BBC News:** *Russian attacks on Ukraine double since Trump inauguration*
+* **CSIS:** *Calculating the cost-effectiveness of Russia’s drone strikes*
+* **War Quants:** *Sustained Russian Shahed swarms: The war of precision mass continues*
+* **Pavlo Krasnomovets:** *Missile Attacks Calendar*
